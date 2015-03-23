@@ -20,7 +20,7 @@ public class Database {
          */
         public static final String YEAR = "year";
         /**
-         * Represents a color corresponding to {@link android.graphics.Color}.
+         * Represents a color, represented as {@link android.graphics.Color}.
          * Type: INTEGER (int).
          */
         public static final String COLOR = "color";

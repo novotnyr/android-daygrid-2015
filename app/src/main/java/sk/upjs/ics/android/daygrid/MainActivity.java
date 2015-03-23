@@ -68,9 +68,9 @@ public class MainActivity extends ActionBarActivity implements LoaderManager.Loa
     public Loader onCreateLoader(int i, Bundle bundle) {
         CursorLoader loader = new CursorLoader(this);
         Uri uri = ColoredDayContentProvider.CONTENT_URI
-                    .buildUpon()
-                    .appendPath(String.valueOf(currentYear))
-                    .appendPath(String.valueOf(currentMonth))
+                .buildUpon()
+                .appendPath(String.valueOf(currentYear))
+                .appendPath(String.valueOf(currentMonth))
                 .build();
         loader.setUri(uri);
         return loader;
@@ -134,6 +134,5 @@ public class MainActivity extends ActionBarActivity implements LoaderManager.Loa
         public BasicAsyncQueryHandler(ContentResolver contentResolver) {
             super(contentResolver);
         }
-
     }
 }
